@@ -1,0 +1,121 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(145deg, #3a1c71, #d76d77, #ffaf7b);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.description {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    color: #fff;
+}
+
+.form-group label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: block;
+    opacity: 0.9;
+}
+
+.input-box {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.input-box::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+textarea {
+    resize: none;
+}
+
+/* 3D Button */
+.btn-3d {
+    background-color: #5a67d8;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(90, 103, 216, 0.4);
+    margin-top: 20px;
+}
+
+.btn-3d:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(90, 103, 216, 0.6);
+}
+
+.result-info {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.result-info p {
+    font-size: 1.1rem;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
